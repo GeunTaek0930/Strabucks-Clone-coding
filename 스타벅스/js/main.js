@@ -73,6 +73,16 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next' // 다음 버튼 선택자
   }
 });
+new Swiper('.awards .swiper-container', {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards  .swiper-prev',
+    nextEl: '.awards  .swiper-next'
+  }
+});
 
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
